@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RECTIFICACIONES LUGO EIRL</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #1a1a1a;
+    }
+
+    /* Carrusel */
+    .carousel-container {
+      position: relative;
+      max-width: 700px;
+      margin: 40px auto;
+      overflow: hidden;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .carousel-slide {
+      display: none;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      height: auto;
+      max-height: 400px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .carousel-slide p {
+      margin-top: 10px;
+      font-size: 0.95em;
+      color: #555;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 45%;
+      width: auto;
+      padding: 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 24px;
+      background-color: rgba(0,0,0,0.5);
+      border: none;
+      border-radius: 50%;
+      user-select: none;
+      transform: translateY(-50%);
+    }
+
+    .prev { left: 10px; }
+    .next { right: 10px; }
+
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header>
+    <img src="logo.png" alt="Logotipo de RECTIFICACIONES LUGO EIRL" style="max-width: 150px; display: block; margin: 0 auto 20px;" />
+    <h1>RECTIFICACIONES LUGO EIRL</h1>
+    <p>Especialistas en rectificación y reparación de motores a combustión</p>
+  </header>
+
+  <!-- Navegación -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- Inicio -->
+  <section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      En <strong>RECTIFICACIONES LUGO EIRL</strong> Nos dedicamos a brindar soluciones técnicas de reparación, reconstrucción y mantenimiento de motores a combustión con alta calidad en los sectores de maquinaria pesada para construcción, minería, transporte fluvial, equipos generadores y todo tipo de vehículo automotriz y mecánico. Contamos con amplia experiencia en nuestro rubro. </p>
+  </section>
+
+  <!-- Servicios con carrusel -->
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <ul>
+      <li>Rectificación de motores a combustión (diésel y gasolina)</li>
+      <li>Reparación de motores para maquinaria de construcción, minería, transporte fluvial y todo tipo de vehículo automotriz</li>
+      <li>Servicios de soldadura especializada</li>
+      <li>Mantenimiento mecánico general</li>
+      <li>Atención con calidad y Grantia</li>
+    </ul>
+
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="mcigueñal-taller.jpeg" alt="Rectificadora de cigüeñales" />
+        <p>Rectificadora de cigüeñales – Precisión en el trabajo de rectificado de cigüeñales.</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="cigueñal.jpeg" alt="Todo tipo de cigüeñales" />
+        <p>Excelentes acabados.</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="exacta-20d.jpeg" alt="Rectificadora de culatas" />
+        <p>Rectificado multiangular.</p>
+      </div>
+      <div class="carousel-slide">
+        <img src="worldbest-model3.jpeg" alt="Barrenadora de túnel de bancada" />
+        <p>Barrenado de tunel de bancada.</p>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">❮</button>
+      <button class="next" onclick="moveSlide(1)">❯</button>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      Somos una empresa peruana especializada en el sector de reparación, reconstrucción y mantenimiento de motores a combustión, con una sólida trayectoria en la rectificación y reparación de motores a combustión para maquinaria pesada, equipos fluviales, vehículos automotrices y aplicaciones industriales.
+    </p>
+    <p>
+      Nuestro equipo está conformado por técnicos altamente capacitados y comprometidos con la calidad, la seguridad y la eficiencia. Contamos con maquinaria de precisión de última generación y aplicamos rigurosos controles en cada etapa del proceso.
+    </p>
+    <p>
+      Nos enorgullece ser aliados estratégicos de empresas del sector construcción, minería, transporte y fluvial, brindando soluciones técnicas que prolongan la vida útil de sus equipos.
+    </p>
+  </section>
+
+  <!-- Misión, Visión y Valores -->
+  <section id="mision-vision-valores">
+    <h2>Misión, Visión y Valores</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 40px;">
+      <div style="flex: 1 1 300px;">
+        <h3>Nuestra Misión</h3>
+        <p>Brindar servicios de rectificación, reparación y mantenimiento mecánico de alta precisión para motores a combustión.</p>
+      </div>
+      <div style="flex: 1 1 300px;">
+        <h3>Nuestra Visión</h3>
+        <p>Ser reconocidos a nivel nacional como empresa líder en soluciones relacionados con nuestro rubro, destacando por calidad e innovación.</p>
+      </div>
+      <div style="flex: 1 1 300px;">
+        <h3>Nuestros Valores</h3>
+        <ul>
+          <li>🔧 Compromiso con la calidad</li>
+          <li>🤝 Responsabilidad y ética profesional</li>
+          <li>⚙️ Innovación técnica constante</li>
+          <li>👷 Seguridad en cada proceso</li>
+          <li>📈 Mejora continua</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 40px;">
+      <div style="flex: 1 1 300px;">
+        <h3>Información</h3>
+        <p><strong>📍 Dirección:</strong> Amarilis, Huánuco, Perú</p>
+        <p><strong>📞 Teléfono:</strong> +51 962 093 639</p>
+        <p><strong>✉️ Correo:</strong> rectificacioneslugoeirl@gmail.com</p>
+        <p><strong>🕒 Horario:</strong> Lunes a Sábado, 8:00 a.m. – 6:00 p.m.</p>
+      </div[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/karames/curso-markdown-master/tree/9a65a17dd637e2be8fee24d6ea6c5558403d5487/markdown%2F100-codigo-fuente.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")
